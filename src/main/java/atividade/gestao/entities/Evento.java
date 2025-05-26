@@ -96,6 +96,7 @@ import jakarta.persistence.Table;
 	public void setVagas(Integer vagas) {
 		this.vagas = vagas;
 	}
+<<<<<<< HEAD
 
 	public Set<Participante> getParticipantes() {
 		return participantes;
@@ -105,6 +106,8 @@ import jakarta.persistence.Table;
 		this.participantes = participantes;
 	}
 
+=======
+>>>>>>> 40b6e97be9e41096ada6d060bd6df5fbf1e5183e
 	
 	
 }
