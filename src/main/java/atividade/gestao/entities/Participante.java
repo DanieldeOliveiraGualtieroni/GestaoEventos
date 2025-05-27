@@ -21,7 +21,7 @@ public class Participante {
 	private String nome;
 	@Column(columnDefinition = "TEXT")
 	private String email;
-	private Integer telefone;
+	private String telefone;
 	
 	@ManyToMany(mappedBy = "participantes")
     private Set<Evento> eventos = new HashSet<>();
@@ -30,7 +30,7 @@ public class Participante {
 		
 	}
 
-	public Participante(Long id, String nome, String email, Integer telefone) {
+	public Participante(Long id, String nome, String email, String telefone) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -62,11 +62,11 @@ public class Participante {
 		this.email = email;
 	}
 
-	public Integer getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(Integer telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 	

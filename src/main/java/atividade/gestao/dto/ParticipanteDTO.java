@@ -7,14 +7,14 @@ public class ParticipanteDTO {
 	 private Long id;
 	 private String nome;
 	 private String email;
-	 private Integer telefone;
+	 private String telefone;
 	
 	
 	public ParticipanteDTO() {
 	}
 
 
-	public ParticipanteDTO(Long id, String nome, String email, Integer telefone) {
+	public ParticipanteDTO(Long id, String nome, String email, String telefone) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
@@ -59,12 +59,12 @@ public class ParticipanteDTO {
 	}
 
 
-	public Integer getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
 
-	public void setTelefone(Integer telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 	
